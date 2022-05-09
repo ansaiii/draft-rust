@@ -1,4 +1,18 @@
+fn add(i:i32,j:i32) -> i32 {
+    i+j
+}
+fn demo() {
+    let a = 10;
+    let b: i32 = 20;
+    let mut c = 30i32;
+    c += 40_i32;
+    let d = 30_i32;
+    let e = add(add(a, b),add(c, d));
+    println!("(a+b) + (c+d)={}",e)
+}
+
 fn main() {
+    demo();
     let penguin_data = "\
     common name length (cm)
     Little penguin,33
