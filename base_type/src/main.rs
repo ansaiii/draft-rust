@@ -18,6 +18,11 @@ fn main() {
     }
 
     for i in 'a'..='z' {
-        println!("{}", i);
+        println!("{:}", i);
     }
+
+    let x = '中';
+    println!("字符'中'占用了{}个字节的内存",std::mem::size_of_val(&x));
+
+    let v: u16 = 38_u8 as u16;
 }
