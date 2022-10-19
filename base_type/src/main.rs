@@ -24,5 +24,10 @@ fn main() {
     let x = '中';
     println!("字符'中'占用了{}个字节的内存",std::mem::size_of_val(&x));
 
-    let v: u16 = 38_u8 as u16;
+    let _v: u16 = 38_u8 as u16;
+
+    let mut s = String::from("hello");
+    s.push_str(", world");
+    // let s1 = s;
+    println!("{}",s);
 }
